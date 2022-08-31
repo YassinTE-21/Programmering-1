@@ -1,6 +1,6 @@
 
 score=0
-name = input("Hej, vad heter du? ")
+name = input("Hej, vad heter du?  ")
 frågesport= (input(f"Hej {name}! Är du redo för frågesport?  "))
 
 if frågesport == "ja":
