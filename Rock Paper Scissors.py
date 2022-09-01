@@ -1,12 +1,10 @@
 import random
-
 datorns_score=0
 användar_score=0
 Möjliga_val=("sten" , "sax" , "påse")
 
-
 #for _ in range(5):
-while datorns_score <10 and användar_score<10:   
+while datorns_score <3 and användar_score<3:   
     Möjliga_val=("sten" , "sax" , "påse")
     Datorns_val=random.choice(Möjliga_val)
     
