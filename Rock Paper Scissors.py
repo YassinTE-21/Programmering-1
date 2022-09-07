@@ -3,8 +3,10 @@ datorns_score=0
 användar_score=0
 Möjliga_val=("sten" , "sax" , "påse")
 
+name=input("vad heter du?:" )
+
 #for _ in range(5):
-while datorns_score <3 and användar_score<3:   
+while datorns_score <3 and användar_score<3:  
     Möjliga_val=("sten" , "sax" , "påse")
     Datorns_val=random.choice(Möjliga_val)
     
@@ -14,12 +16,12 @@ while datorns_score <3 and användar_score<3:
     if Datorns_val ==  Användarval:
         print("Inga poäng. Lika val. ")
 
-    elif Datorns_val == "sten" and Användarval == "sax":
+    elif Datorns_val == "sten" and Användarval == "sax": 
         print("1 Poäng till datorn")
         datorns_score=datorns_score+1
 
     elif Datorns_val == "sten" and Användarval == "påse":
-        print("1 Poäng till Användaren")
+        print(f"1 Poäng till {name}")
         användar_score=användar_score+1
 
     elif Datorns_val == "sax" and Användarval == "påse":
@@ -27,11 +29,11 @@ while datorns_score <3 and användar_score<3:
         datorns_score=datorns_score+1
 
     elif Datorns_val == "sax" and Användarval == "sten":
-        print("1 Poäng till Användaren")
+        print(f"1 Poäng till {name}")
         användar_score=användar_score+1
 
     elif Datorns_val == "påse" and Användarval == "sax":
-        print("1 Poäng till Användaren")
+        print(f"1 Poäng till {name}")
         användar_score=användar_score+1
 
     elif Datorns_val == "påse" and Användarval == "sten":
