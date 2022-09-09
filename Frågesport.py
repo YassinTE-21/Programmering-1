@@ -1,7 +1,3 @@
-
-from tkinter import N
-
-
 score=0
 name = input("Hej, vad heter du?  ")
 frågesport= (input(f"Hej {name}! Är du redo för frågesport?  "))
@@ -11,9 +7,7 @@ if frågesport == "ja":
 else:
     print("Då ses vi någon annan gång. ")
 
-
-
-Fråga1=input("Hur många ränder finns på USAs flagga? ") 
+Fråga1=input("Hur många ränder finns på USAs flagga?: ") 
 
 if Fråga1 == "13":
     score=score + 1
@@ -24,7 +18,7 @@ else:
     print(f"Tyvärr hade du fel {name}. USAs flagga har 13 ränder.  ")
 
 
-Fråga2=input("Hur gammal är Hampus Eriksson? ")
+Fråga2=input("Hur gammal är Hampus Eriksson?: ")
 
 if Fråga2 == "28 år" or Fråga2 == "28":
     print("Grattis du har rätt! ")
@@ -33,7 +27,7 @@ else:
     print(f"Tyvärr hade du fel {name}. Hampus ålder är 28 år.  ")
     score=score - 1
 
-Fråga3=input("Hur många tidszoner finns i Ryssland? ")
+Fråga3=input("Hur många tidszoner finns i Ryssland?: ")
 
 if Fråga3 == "11":
     print("Grattis du hade rätt! ")
@@ -42,7 +36,7 @@ else:
     print(f"Tyvärr hade du fel {name}. Svaret var 11. ")
     score=score - 1
 
-Fråga4=input("Vad hette den turkiska staden Istanbul fram till 1923? ")
+Fråga4=input("Vad hette den turkiska staden Istanbul fram till 1923?: ")
 
 if Fråga4 == "Konstantinopel" or Fråga4 == "konstantinopel":
     print("Grattis du har rätt!")
@@ -55,4 +49,3 @@ input("Tryck på enter för att se din score")
 
 print(f"du slutade med {score}/4 poäng.  ")
 
-    
