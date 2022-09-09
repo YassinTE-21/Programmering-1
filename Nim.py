@@ -1,11 +1,9 @@
 from ast import While
-P=int(21)
-
+P=int(input("Hur många pinnar vill du köra med? "))
 
 name_1=input("Vad är den första spelarens namn?: " )
 
 name_2=input("Vad är den andra spelarens namn?: ")
-
 
 print(f"Då är det {name_1} mot {name_2}.  ")
 
