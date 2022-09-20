@@ -9,7 +9,8 @@ while True:
                    "3. Ta bort sak i resväskan\n"
                    "4. Avsluta program\n")
    if menyval == "1":
-       print(f"Du har {travelbag} i väskan. ")
+       print (f"i väskan har du: ", end="")
+       print(*travelbag, sep=",")
         
    elif menyval == "2":
        travelbag.append (input("Vad vill du lägga till?  "))
