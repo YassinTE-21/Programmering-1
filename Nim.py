@@ -17,3 +17,4 @@ while P >0:
 
     ta_bort = int(input(f"Det finns {P} sticks. Mellan 1,2,3 hur många vill du ta? "))
     P-=ta_bort
+

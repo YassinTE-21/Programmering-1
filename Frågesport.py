@@ -47,5 +47,5 @@ else:
 
 input("Tryck på enter för att se din score")
 
-print(f"du slutade med {score}/4 poäng.  ")
+print(f"Du slutade med {score}/4 poäng.  ")
 
