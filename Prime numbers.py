@@ -1,3 +1,5 @@
+from asyncore import loop
+
 num=int(input("vilket nummer vill du kolla? "))
 
 for i in range (2, num):
