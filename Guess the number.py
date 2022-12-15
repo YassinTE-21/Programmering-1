@@ -1,7 +1,7 @@
 import random
 
 num = random.randint(1, 10)
-guess =()
+guess = ()
 
 while guess != num:
     guess = input("Gissa ett tal mellan 1 och 10: ")

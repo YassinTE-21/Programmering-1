@@ -1,8 +1,4 @@
-def best(name):
-    name=input()  
-    print(f"{name} är bäst" ) 
+nummer = ["1", "1"]
 
-
-
-
-print(("Queen of hearts".split(" ")))
+if nummer[0] == nummer[1]:
+    print(" ")

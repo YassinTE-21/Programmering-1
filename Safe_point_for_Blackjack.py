@@ -8,10 +8,7 @@ def hand_value(hand):
         if value == "King" or value == "Queen" or value == "Jack":
             hand_value += 10
         elif value == "Ace":
-            if hand_value < 16:
-                hand_value += 11
-            elif hand_value > 21:
-                hand_value -= 10
+            hand_value += 11
         else:
             hand_value += int(value)
     return hand_value
@@ -72,8 +69,6 @@ while play_again:
                 )
                 dealer_score += 1
                 break
-            if hand_value(hand) == 21 and hand_value(dealer_hand) < 21:
-                print(f"You got ")
         elif hit_or_stand == "stand":
             while hand_value(dealer_hand) < 17:
                 for i in range(1):
