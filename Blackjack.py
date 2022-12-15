@@ -10,8 +10,8 @@ def hand_value(hand):
         elif value == "Ace":
             if hand_value < 16:
                 hand_value += 11
-            elif hand_value > 21:
-                hand_value -= 10
+            elif hand_value < 16:
+                hand_value += 1
         else:
             hand_value += int(value)
     return hand_value
