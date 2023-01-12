@@ -3,7 +3,6 @@
 
 
 def best(name):
-    name = "Yassin"
     print(f"{name} är bäst")
 
 
@@ -15,9 +14,6 @@ print(
 
 
 def square(number):
-    # TODO Returnera talet kvadrerat
-    # Ex: 5 in - 25 ut
-    pass
     return number**2
 
 
@@ -33,8 +29,6 @@ print(
 
 
 def sums(a, b):
-    # TODO Returnera summan av a och b
-    # Ex: 2, 6 in - 8 ut
     return a + b
 
 
@@ -61,11 +55,23 @@ def maximum(a, b, c):
         return c
 
 
+print(
+    "------------------------------------------------------------------------------------"
+)
+
+
 def palindrom(ord):
-    # TODO Returnera True om ord är ett palindrom
-    # Ex: abba in - True ut
-    # Palindrom är ett ord som stavas likadant baklänges och framlänges.
-    pass
+    if ord.lower() == ord[::-1].lower():
+        print("Det är en palindrom. ")
+    else:
+        print("Det är inte en palindrom.")
+
+
+palindrom("Arda")
+
+print(
+    "------------------------------------------------------------------------------------"
+)
 
 
 def prime(nr):
@@ -76,7 +82,4 @@ def prime(nr):
         break
     else:
         print("Det är ett prim nummer ")
-    return nr
-
-
-print(prime(5))
+        return nr
